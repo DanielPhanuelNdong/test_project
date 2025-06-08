@@ -1,0 +1,22 @@
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #212529; /* sombre comme bg-dark */
+  z-index: 1030;
+}
+
+.bottom-bar.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+.bottom-bar.hide {
+  transform: translateY(100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.bottom-bar.show {
+  transform: translateY(0);
+  opacity: 1;
+}
