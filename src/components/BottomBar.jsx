@@ -10,7 +10,7 @@ const BottomBar = ({ selectedSkip, onBack, onContinue }) => {
         <div>
           {selectedSkip?.postcode}{' '}
           <span className="text-primary">£{selectedSkip?.price_before_vat}</span>{' '}
-          <span className="text-secondary">14 day hire</span>
+          {/* <span className="text-secondary">14 day hire</span> */}
         </div>
         <div>
           <button className="btn btn-secondary me-2" onClick={onBack}>Back</button>
