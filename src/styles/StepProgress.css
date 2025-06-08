@@ -55,12 +55,12 @@
 }
 
 .step-progress-container {
-        overflow-x: hidden;
-        scrollbar-width: thin;
-        /* Firefox */
-        scrollbar-color: #3f3e3e transparent;
-        /* Firefox */
-    }
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: #3f3e3e transparent;
+    /* Firefox */
+}
 
 /* Pour Chrome, Edge, Safari */
 .step-progress-container::-webkit-scrollbar {
@@ -100,12 +100,75 @@
         width: 400px;
     }
 
+    .step-icon {
+        font-size: 1.1rem;
+    }
+
+    .step-label {
+        font-size: 0.7rem;
+    }
+
+}
+@media (max-width: 550px) {
+
+    .step-progress-container {
+        width: 350px;
+    }
+
+    .step-icon {
+        font-size: 1.1rem;
+    }
+
+    .step-label {
+        font-size: 0.6rem;
+    }
+
 }
 
-@media (max-width: 410px) {
+@media (max-width: 420px) {
 
     .step-progress-container {
         width: 300px;
+    }
+
+    .step-icon {
+        font-size: 1.1rem;
+    }
+
+    .step-label {
+        font-size: 0.6rem;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .step-progress-container {
+        width: 300px;
+    }
+
+    .step-icon {
+        font-size: 0.8rem;
+    }
+
+    .step-label {
+        font-size: 0.5rem;
+    }
+
+}
+
+@media (max-width: 370px) {
+
+    .step-progress-container {
+        width: 270px;
+    }
+
+    .step-icon {
+        font-size: 0.8rem;
+    }
+
+    .step-label {
+        font-size: 0.5rem;
     }
 
 }

@@ -1,6 +1,27 @@
+
+body, html {
+  overflow-x: hidden; /* évite le scroll horizontal */
+}
+
+.container {
+  max-width: 100%; /* s'assurer que la largeur ne dépasse pas */
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.col-12, .col-sm-6, .col-md-4 {
+  display: flex;
+  justify-content: center;
+}
+
+
 body {
   background-color: #121212;
   color: #fff;
+  display: flex;
 }
 
 .text-color {

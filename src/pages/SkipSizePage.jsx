@@ -52,7 +52,7 @@ const SkipSizePage = () => {
 
     return (
         <>
-            <div className="container py-5">
+            <div className="container pb-5 pt-1">
 
                 {loading ? (
                     <div className="text-center py-2">
@@ -62,16 +62,15 @@ const SkipSizePage = () => {
                     </div>
                 ) : (
                     <div>
-                        <div className='d-flex align-content-center justify-content-center mb-1 '>
+                        <div className='d-flex align-content-center justify-content-center mb-4 '>
                             <StepProgress currentStep={currentStep} />
                         </div>
-                        <h3 className="text-center fw-bold text-white">Choose Your <span className="text-primary">Skip</span> Size</h3>
+                        <h3 className="text-center fw-bold text-white mt-4">Choose Your <span className="text-primary">Skip</span> Size</h3>
                         <p className="text-center text-secondary mb-4">Select the skip size that best suits your needs</p>
 
-
-                        <div className="row g-4">
+                        <div className="row g-4 align-content-center align-self-center justify-content-center text-center">
                             {datas.map((data) => (
-                                <div key={data.id} className="col-12 col-sm-6 col-md-4">
+                                <div key={data.id} className="col-12 col-sm-6 col-md-4 d-flex justify-content-center align-items-center text-center">
                                     <SkipCard
                                         skip={data}
                                         selected={selectedSkip?.id === data.id}
@@ -81,6 +80,7 @@ const SkipSizePage = () => {
                                 </div>
                             ))}
                         </div>
+
                     </div>
 
                 )
