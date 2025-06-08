@@ -67,13 +67,10 @@ yarn dev
 
 ### (Optional) Docker & Docker Compose
 
-# 1. Build the image
-docker-compose build
+# 1. Build the image and Run the container
+docker-compose up -d --build
 
-# 2. Run the container
-docker-compose up
-
-# 3. Installs dependencies
+# 2. Installs dependencies
 docker exec -ti test-project sh
 npm install
 # or
