@@ -1,4 +1,4 @@
-// SkipCard.jsx
+
 import React from "react";
 
 const SkipCard = ({ skip, selected, onSelect, image }) => {
