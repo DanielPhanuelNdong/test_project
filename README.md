@@ -17,7 +17,7 @@ This React-based application allows users to select the size of a skip (waste co
 
 ```bash
 # 1. Clone the project
-git clone https://github.com/phanuelndong/test_project
+git clone https://github.com/DanielPhanuelNdong/test_project
 cd skip-selection-app
 
 # 2. Installs dependencies
